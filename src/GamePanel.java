@@ -2,7 +2,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 
 public class GamePanel {
-jp = new JPanel;
+jp = new JPanel();
 final int MENU = 0;
 final int GAME = 1;
 final int END = 2;
