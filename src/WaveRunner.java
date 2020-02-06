@@ -5,8 +5,8 @@ import javax.swing.JFrame;
 public class WaveRunner {
 	GamePanel gp = new GamePanel();
 	JFrame jf;
-	public static final int WIDTH = 500;
-	public static final int HEIGHT = 800;
+	public static final int WIDTH = 800;
+	public static final int HEIGHT = 500;
 
 	public WaveRunner() {
 		jf = new JFrame();

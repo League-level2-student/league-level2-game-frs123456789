@@ -78,10 +78,10 @@ void drawMenuState(Graphics g) {
 	g.fillRect(0, 0, WaveRunner.WIDTH, WaveRunner.HEIGHT);
 	g.setFont(titleFont);
 	g.setColor(new Color(0,40,108));
-	g.drawString("Press 'enter' to start!", 90, 200);
-	g.drawString("Wave Runner", 150, 100);
+	g.drawString("Press 'enter' to start!", 10, 200);
+	g.drawString("Wave Runner", 50, 100);
 	g.setFont(titleFont);
-	g.drawImage(image,115,400,250,322,null);
+	g.drawImage(image,500,150,250,322,null);
 }
 
 void drawGameState(Graphics g) {
