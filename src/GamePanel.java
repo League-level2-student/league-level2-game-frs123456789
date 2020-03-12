@@ -23,6 +23,7 @@ public class GamePanel extends JPanel implements KeyListener, ActionListener {
 	Timer frameDraw;
 	public static BufferedImage ankr;
 	public static BufferedImage oshen;
+	public static BufferedImage beaut;
 	public static boolean needImage = true;
 	public static boolean gotImage = false;
 
@@ -46,6 +47,7 @@ public class GamePanel extends JPanel implements KeyListener, ActionListener {
 		if (needImage) {
 			ankr = loadImage("anchor.png");
 			oshen = loadImage("oceanbackground.jpg");
+			beaut = loadImage("boat.png");
 			gotImage = true;
 			needImage = false;
 		}
@@ -87,6 +89,7 @@ public class GamePanel extends JPanel implements KeyListener, ActionListener {
 	void drawGameState(Graphics g) {
 		if (gotImage) {
 			g.drawImage(oshen, 0, 0, WaveRunner.WIDTH, WaveRunner.HEIGHT, null);
+			g.drawImage(beaut, 500, 150, 250, 322, null);
 		} else {
 			g.setColor(Color.BLACK);
 			g.fillRect(0, 0, WaveRunner.WIDTH, WaveRunner.HEIGHT);
